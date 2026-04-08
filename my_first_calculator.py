@@ -1,3 +1,7 @@
+# URL del repositorio de respaldo
+REPO_URL = "https://github.com/viryninja/calculator_backup.git"
+
+print(f"Este script tiene respaldo en: {REPO_URL}")
 # my_first_calculator.py by AceLewis
 # TODO: Make it work for all floating point numbers too
 
