@@ -2,6 +2,16 @@
 REPO_URL = "https://github.com/viryninja/calculator_backup.git"
 
 print(f"Este script tiene respaldo en: {REPO_URL}")
+
+# Cambiar al directorio del repositorio en Termux
+import os
+REPO_PATH = "/data/data/com.termux/files/home/calculator_backup"  # carpeta donde se clonará el repo
+try:
+    os.chdir(REPO_PATH)
+    print(f"Directorio cambiado a: {REPO_PATH}")
+except FileNotFoundError:
+    print(f"¡Atención! No se encontró la carpeta: {REPO_PATH}")
+    print("Asegúrate de clonar el repositorio aquí antes de ejecutar el script.")
 # my_first_calculator.py by AceLewis
 # TODO: Make it work for all floating point numbers too
 
